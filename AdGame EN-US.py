@@ -85,11 +85,11 @@ while True:
     print('\033[H\033[J')
 
     # In this part, I want to ask the user if they want to play again to make it an interesting game to play.
-    PlayAgain = input('\nPlay \033[1;32magain\033[0;0m? (Y/N): ').lower().strip()[0]
+    PlayAgain = input('\nPlay \033[1;32magain\033[0;0m? (Y/N): ').lower().strip()
 
     # Validation of input response 'PlayAgain'
     while PlayAgain not in ['y', 'n']:
-        PlayAgain = input('\n\033[1;31mInvalid option\033[0;0m. Play again? (Y/N): ').lower().strip()[0]
+        PlayAgain = input('\n\033[1;31mInvalid option\033[0;0m. Play again? (Y/N): ').lower().strip()
         continue
 
     # To check the user's response for the first or second input in case they entered it incorrectly and execute the following commands, whether it is 'continue' or 'break'.
